@@ -1,0 +1,29 @@
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { font-family: 'Noto Sans TC', system-ui, -apple-system, sans-serif; margin: 0; background:#f6f8fb; color:#202124; }
+a { color:#0b57d0; text-decoration:none; }
+a:hover { text-decoration:underline; }
+.hero { background: linear-gradient(120deg, #0b57d0, #3f8efc); color: white; padding: 32px 16px; box-shadow:0 2px 10px rgba(0,0,0,0.15); }
+.hero__inner { max-width: 1024px; margin: 0 auto; }
+.hero h1 { margin: 0 0 8px; font-size: 32px; }
+.hero p { margin: 0; opacity: 0.9; }
+.grid { max-width: 1024px; margin: 24px auto; padding: 0 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.card { background: white; border-radius: 12px; padding: 16px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; flex-direction:column; gap:6px; }
+.card h2 { margin: 0; font-size: 18px; }
+.card .meta, .card .address { margin: 0; color: #444; }
+.card .map-inline { align-self: flex-start; margin-top: auto; display:inline-flex; align-items:center; gap:6px; background:#eaf2ff; color:#0b57d0; padding:8px 10px; border-radius:8px; text-decoration:none; font-weight:600; }
+.card .map-inline:hover { background:#d8e6ff; }
+.meta { display:flex; gap:8px; align-items:center; }
+.content { max-width: 800px; margin: 24px auto; padding: 0 16px 32px; background:white; border-radius: 12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+.back { color: white; text-decoration:none; display:inline-block; margin-bottom:12px; }
+.map-button { display:inline-block; margin-top:10px; padding:10px 16px; background:white; color:#0b57d0; border-radius:8px; font-weight:700; text-decoration:none; }
+.photo { text-align:center; padding:16px; }
+.photo img { max-width:100%; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+section { padding: 0 16px 16px; }
+section h2 { margin-top:0; }
+.details { list-style: none; padding: 0; margin: 0; display:flex; flex-direction:column; gap:8px; }
+.footer { text-align:center; color:#666; padding:16px; }
+@media (max-width: 640px) {
+  .hero h1 { font-size: 24px; }
+}
